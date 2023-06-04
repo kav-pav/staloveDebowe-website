@@ -1,0 +1,25 @@
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+
+.list__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: 2%;
+  li {
+    margin: auto 20px;
+  }
+}
+.logo_container {
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+}

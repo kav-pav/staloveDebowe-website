@@ -1,0 +1,62 @@
+@import '../../styles/variables.module.scss';
+
+.bg_code {
+  background-color: rgb(40, 42, 54);
+}
+
+.blinking_cursor::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.break {
+  display: block;
+  height: 2px;
+  width: 10px;
+}
+
+.type {
+  font-family: monospace;
+  color: #0000;
+  background: linear-gradient(-90deg, $black 5px, #0000 0) 10px 0,
+    linear-gradient($black 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1),
+    t calc(var(--n) * 0.025s) steps(var(--n)) forwards;
+}
+
+[data-theme='dark'] .type {
+  font-family: monospace;
+  color: #0000;
+  background: linear-gradient(-90deg, $halfWhite 5px, #0000 0) 10px 0,
+    linear-gradient($halfWhite 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1),
+    t calc(var(--n) * 0.025s) steps(var(--n)) forwards;
+}
+
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}

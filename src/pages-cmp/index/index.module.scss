@@ -1,0 +1,70 @@
+.sentence_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.sentence_wrapper {
+  display: inline-block;
+  font-weight: 200;
+  font-size: 56px;
+  position: absolute;
+  top: 35%;
+  span {
+    font-weight: 600;
+  }
+}
+.sentence_wrapper span:last-child {
+  float: right;
+}
+.typewritter_wrapper {
+  padding: 50px 0px 0px 50px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 50%;
+}
+// .typewritter_container {
+// }
+
+// import { useNavigate } from 'react-router-dom';
+// import { useMutation } from '@tanstack/react-query';
+// import type { UseMutationResult } from '@tanstack/react-query';
+
+// import { useAxios } from 'api/useAxios/useAxios';
+// import type { ValidationSignUpSchema } from 'views/signUp/SignUp.schema';
+// import { AppRoute } from 'appSettings/AppRoute';
+
+// import type { ErrorResponse } from './useRegister.types';
+
+// export const useRegister = () => {
+//   const { axiosInstance } = useAxios();
+//   const navigate = useNavigate();
+
+//   const registerRequest = (
+//     payload: Omit<ValidationSignUpSchema, 'passwordRepeat'>,
+//   ) => {
+//     return axiosInstance.post('/auth/register', payload);
+//   };
+
+//   const mutation: UseMutationResult<{}, ErrorResponse, ValidationSignUpSchema> =
+//     useMutation<{}, ErrorResponse, ValidationSignUpSchema>(
+//       async (payload) => {
+//         return registerRequest(payload);
+//       },
+//       {
+//         onSuccess: (data) => {
+//           navigate(AppRoute.signIn);
+//           return data;
+//         },
+//         onError: (error: ErrorResponse) => {
+//           // register Errory
+//           // reducer?
+//           console.log(`error:`, error);
+//         },
+//       },
+//     );
+//   return { mutation };
+// };
