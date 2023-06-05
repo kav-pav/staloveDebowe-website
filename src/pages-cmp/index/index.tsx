@@ -1,22 +1,25 @@
 import type { FC } from 'react';
-
-import { Typewriter } from '@/cmp/typewriter/typewriter';
+import Image from 'next/image';
 
 import styles from './index.module.scss';
 
 const Home: FC<{}> = () => {
   return (
     <div>
-      <div className={styles.typewritter_container}>
-        <div className={styles.typewritter_wrapper}>
-          <Typewriter />
-        </div>
+      <div className={styles.img_container}>
+        <Image
+          className={styles.img}
+          src="/landing-page.jpg"
+          alt="Carpenter working"
+          fill
+        />
       </div>
-      <div className={styles.sentence_container}>
-        <div className={styles.sentence_wrapper}>
-          I am a developer specialising in <span>React</span> and
-          <br /> <span>User Expirence</span>
-        </div>
+      <div className={styles.text_container}>
+        <h1>Creating unique and personalized woodwork.</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctusnec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
       </div>
     </div>
   );

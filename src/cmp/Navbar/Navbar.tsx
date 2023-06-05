@@ -1,36 +1,27 @@
 import type React from 'react';
 import type { ScriptProps } from 'next/script';
-import { useTheme } from 'next-themes';
 import Link from 'next/link';
-
-import ThemeBtn from '../themeButton/themeButton';
-import LogoIcon from '../logo/logoIcon';
+import Image from 'next/image';
 
 import styles from './Navbar.module.scss';
 
 const Navbar: React.FC<ScriptProps> = () => {
-  const { theme } = useTheme();
-
   return (
     <div className={styles.nav__container}>
       <div className={styles.logo_container}>
         <Link href="/">
-          <LogoIcon theme={theme} />
+          <Image src="/logo.png" width={200} height={60} alt="logo" />
         </Link>
       </div>
-
       <ul className={styles.list__container}>
         <li>
-          <Link href="/work">Work </Link>
+          <Link href="/blog">Blog</Link>
         </li>
         <li>
-          <Link href="/hire-me">Hire me</Link>
+          <Link href="/about">About Us</Link>
         </li>
         <li>
-          <Link href="/about">About </Link>
-        </li>
-        <li>
-          <ThemeBtn />
+          <Link href="/contact">Contact </Link>
         </li>
       </ul>
     </div>

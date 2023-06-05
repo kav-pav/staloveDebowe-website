@@ -1,9 +1,12 @@
 .nav__container {
   display: flex;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 20%;
+  height: 10%;
 }
 
 .list__container {
@@ -14,11 +17,18 @@
   margin-right: 2%;
   li {
     margin: auto 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 }
 .logo_container {
   /* inherit font & color from ancestor */
   color: inherit;
+  margin-left: 2%;
   font: inherit;
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;

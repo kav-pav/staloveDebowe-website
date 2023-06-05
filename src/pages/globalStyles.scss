@@ -5,15 +5,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Work Sans', sans-serif;
-}
-:root {
-  color: $black;
-  background: $white;
-}
-
-[data-theme='dark'] {
-  color: $white;
-  background: $black;
+  margin: 0;
 }
 
 a {
@@ -21,8 +13,14 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h1 {
+  font: $h1Font;
+  margin: 0px;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $white;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
 }
