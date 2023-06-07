@@ -1,14 +1,15 @@
-import { ThemeProvider } from 'next-themes';
 import './globalStyles.scss';
 import type { AppProps } from 'next/app';
 
 import Navbar from '@/cmp/Navbar/Navbar';
+import Footer from '@/cmp/Footer';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <>
       <Navbar />
       <Component {...pageProps} />
-    </ThemeProvider>
+      <Footer />
+    </>
   );
 }

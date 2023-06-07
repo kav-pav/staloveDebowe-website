@@ -1,0 +1,12 @@
+@import '@/styles/variables.module.scss';
+
+.button {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background: $lightBrown;
+  font: $buttonFont;
+  color: $blackOverlay;
+  border: none;
+  letter-spacing: 2px;
+}

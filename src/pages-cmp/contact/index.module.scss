@@ -1,0 +1,12 @@
+@import '@/styles/variables.module.scss';
+@import '@/styles/globalClasses.module.scss';
+
+.text_container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  h1 p {
+    font: $regualarTextType1;
+  }
+}

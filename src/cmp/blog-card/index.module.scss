@@ -1,0 +1,24 @@
+@import '@/styles/variables.module.scss';
+
+.BlogCard__container {
+  background: $white;
+  margin: auto;
+  width: 500px;
+  box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.1);
+}
+
+.BlogCardImg__container {
+  position: relative;
+  width: 500px;
+  height: 200px;
+}
+
+.BlogCardInfo__container {
+  display: flex;
+  flex-direction: row;
+}
+.BlogCardText__container {
+}
+.BlogCardContent__container {
+  margin: 20px;
+}

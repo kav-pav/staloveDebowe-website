@@ -1,3 +1,3 @@
-import AboutMe from '@/pages-cmp/about-me';
+import AboutUs from '@/pages-cmp/about-us';
 
-export default AboutMe;
+export default AboutUs;

@@ -1,0 +1,21 @@
+@import '@/styles/variables.module.scss';
+@import '@/styles/globalClasses.module.scss';
+
+.text_container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  h1 p {
+    font: $regualarTextType1;
+  }
+}
+
+.BlogPosts__container {
+  margin: 100px 0px;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+  grid-gap: 50px;
+  color: $black;
+}
