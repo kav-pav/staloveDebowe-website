@@ -2,7 +2,7 @@ import type { ScriptProps } from 'next/script';
 import type { FC } from 'react';
 import Image from 'next/image';
 
-import InfoAtom from '../info-atom';
+import InfoAtom from '../info-blog';
 import AvatarIcon from '../icons/avatarIcon';
 import CalendarIcon from '../icons/calendarIcon';
 

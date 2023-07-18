@@ -13,8 +13,30 @@ a {
   color: inherit;
   text-decoration: none;
 }
+//potential css for scrollbar
+// ::-webkit-scrollbar {
+//   width: 10px;
+//   height: 10px;
+// }
 
-h1 {
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: $lightBrown;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: $brown;
+//   border-radius: 5px;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: $lightBrown;
+// }
+
+h1,
+h2 {
   font: $h1Font;
   margin: 0px;
   color: transparent;
@@ -24,4 +46,8 @@ h1 {
   display: flex;
   align-items: center;
   letter-spacing: 2px;
+}
+
+h2 {
+  -webkit-text-stroke-color: $black;
 }

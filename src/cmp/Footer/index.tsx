@@ -10,11 +10,10 @@ import styles from './index.module.scss';
 const Footer: React.FC<ScriptProps> = () => {
   // to do change shadow depends on router
   return (
-    <div className={styles.footer_containerWithShadow}>
+    <div className={styles.footer__containerWithShadow}>
       <div className={styles.footerSection__container}>
         <div className={styles.footerCol1__container}>
           <Image src="/logo.png" width={200} height={60} alt="logo" />
-          {/* <div className={styles.footer__imgGradient} /> */}
           <p>
             Eu conubia ullamcorper magna hac posuere justo. Ridiculus ligula
             tortor semper nam lacus ornare congue vulputate accumsan etiam.

@@ -11,3 +11,92 @@
   object-fit: cover;
 }
 // do wyjebania
+
+.aboutUs__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  h1 {
+    align-self: center;
+  }
+  p {
+    font: $regualarTextType1;
+  }
+}
+
+.aboutUs__servicesContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 80px;
+}
+
+.aboutUs__servicesTextContainer {
+  display: flex;
+  flex-direction: column;
+  color: $black;
+  margin-bottom: 100px;
+}
+
+.aboutUs__servicesWrapper {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.aboutUs__whyContainer {
+  position: relative;
+  margin: 200px 0px;
+  height: 700px;
+}
+
+.aboutUs__whyContainerImg {
+  position: relative;
+  width: 792px;
+  height: 625px;
+  z-index: 11;
+}
+
+.aboutUs__whyContainerText {
+  h2 {
+    font: $HeadLineType2;
+  }
+  position: relative;
+  padding: 75px 20px 75px 75px;
+  z-index: 12;
+  background: $white;
+  left: 100%;
+  transform: translate(-792px, 0px);
+  top: -525px;
+  color: $black;
+  width: 698px;
+  height: 475px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUs__whyContainerIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 150px;
+}
+
+.carousel__background {
+  background-image: url('/carouselBG.png');
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}

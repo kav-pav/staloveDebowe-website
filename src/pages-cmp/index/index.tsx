@@ -1,11 +1,18 @@
 import type { FC } from 'react';
 import Image from 'next/image';
+import { useQuery } from 'urql';
 
 import Button from '@/cmp/Button';
 
 import styles from './index.module.scss';
+import homeQuery from './homeQuery';
 
 const Home: FC<{}> = () => {
+  const [result] = useQuery({
+    query: homeQuery,
+  });
+
+  console.log('data', result);
   return (
     <div>
       <div className={styles.global__imgContainer}>

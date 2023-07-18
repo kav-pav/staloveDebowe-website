@@ -1,0 +1,29 @@
+@import '@/styles/variables.module.scss';
+@import '@/styles/globalClasses.module.scss';
+
+.carousel__background {
+  background: black;
+  height: 600px;
+}
+
+.slideCarousel__arrowRight {
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-65%, -50%) rotate(-45deg);
+}
+
+.slideCarousel__arrowLeft {
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-35%, -50%) rotate(135deg);
+}

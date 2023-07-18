@@ -7,6 +7,7 @@ $brown: #ab7442;
 $lightBrown: #d59f4e;
 $halfWhite: #ccccccbf;
 $footerDisclaimer: #7a7a7a;
+$slideBorderColor: #838182;
 
 //fonts
 
@@ -14,6 +15,9 @@ $regualarTextType1: normal normal 400 16px/18px Montserrat, serif;
 $regualarTextType2: normal normal 400 18px/20px Montserrat, serif;
 
 $boldTextType1: normal normal 700 22px/22px Poppins, serif;
+
+$HeadLineType1: normal normal 500 22px/26px Poppins, serif;
+$HeadLineType2: normal normal 600 50px/50px Poppins, serif;
 
 $h1Font: normal normal 700 68px/68px Poppins, serif;
 
@@ -25,3 +29,9 @@ $buttonFont: normal normal 700 14px/17px Poppins, serif;
 // font-weight
 // font-size/line-height
 // font-family
+
+// font-family: 'Poppins';
+// font-style: normal;
+// font-weight: 600;
+// font-size: 50px;
+// line-height: 50px;
